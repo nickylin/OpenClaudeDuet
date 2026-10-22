@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="How OpenClaudeDuet works: apps, watchers, attention inbox, your decision">
+  <title>How OpenClaudeDuet works</title>
+  <defs>
+    <style>
+      .bg { fill: #070708; }
+      .panel { fill: #161617; stroke: rgba(255,255,255,0.08); stroke-width: 1; }
+      .title { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 700; fill: #f5f5f7; }
+      .head { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 21px; font-weight: 700; fill: #f5f5f7; }
+      .item { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; fill: #c7c7cc; }
+      .note { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; fill: #8e8e93; }
+      .arrow { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 30px; fill: #5EC8B5; }
+    </style>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="48" y="76">How it works — one loop, everything on your machine</text>
+
+  <rect class="panel" x="48" y="130" width="262" height="420" rx="20"/>
+  <text class="head" x="76" y="182">Your apps</text>
+  <text class="item" x="76" y="238">Gmail</text>
+  <text class="item" x="76" y="282">Calendar</text>
+  <text class="item" x="76" y="326">Slack</text>
+  <text class="item" x="76" y="370">Stripe</text>
+  <text class="item" x="76" y="414">MCP servers</text>
+  <text class="item" x="76" y="458">Local folders</text>
+
+  <path d="M316 340 H346 M336 329 L348 340 L336 351" stroke="#5EC8B5" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect class="panel" x="366" y="130" width="262" height="420" rx="20"/>
+  <text class="head" x="394" y="182">Watchers</text>
+  <text class="item" x="394" y="238">Poll on intervals</text>
+  <text class="item" x="394" y="282">you set</text>
+  <text class="item" x="394" y="340">Per-connector</text>
+  <text class="item" x="394" y="384">checkpoints —</text>
+  <text class="item" x="394" y="428">nothing is</text>
+  <text class="item" x="394" y="472">read twice</text>
+
+  <path d="M634 340 H664 M654 329 L666 340 L654 351" stroke="#5EC8B5" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect class="panel" x="684" y="130" width="262" height="420" rx="20"/>
+  <text class="head" x="712" y="182">Attention inbox</text>
+  <text class="item" x="712" y="238">Rules triage first</text>
+  <text class="item" x="712" y="282">(free), the model</text>
+  <text class="item" x="712" y="326">classifies the rest</text>
+  <text class="item" x="712" y="384">Daily background</text>
+  <text class="item" x="712" y="428">budget + quiet</text>
+  <text class="item" x="712" y="472">hours — your rules</text>
+
+  <path d="M952 340 H982 M972 329 L984 340 L972 351" stroke="#5EC8B5" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect class="panel" x="1002" y="130" width="230" height="420" rx="20"/>
+  <text class="head" x="1030" y="182">You decide</text>
+  <text class="item" x="1030" y="238">Morning brief</text>
+  <text class="item" x="1030" y="296">Approval and</text>
+  <text class="item" x="1030" y="340">form cards</text>
+  <text class="item" x="1030" y="398">Nothing is sent,</text>
+  <text class="item" x="1030" y="442">paid, signed or</text>
+  <text class="item" x="1030" y="486">deleted without</text>
+  <text class="item" x="1030" y="530">your tap</text>
+
+  <text class="note" x="48" y="622">Credentials live in a local vault (mode 0600). Chat history and the model only ever see masked references.</text>
+  <text class="note" x="48" y="652">Design: docs/connectors-design.md · Kernel: OpenGrokBot (same runtime, same data directory)</text>
+</svg>

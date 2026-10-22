@@ -2,6 +2,8 @@
 
 **An open-source alternative to Claude Duet — a proactive AI agent that watches your apps, briefs you every morning, and asks before it acts. On YOUR machine, with any model.**
 
+<img src="./docs/hero.svg" alt="OpenClaudeDuet — morning brief and an approval card" width="880" />
+
 Claude Duet launched on 2026-10-21 as a research preview: US-only, waitlist-gated, limited to Claude Pro/Max plans, and it runs on Anthropic's cloud computer with Anthropic's model. If you are outside the US, on the waitlist, or simply want your agent's memory and credentials to stay on your own machine, there is no Duet for you.
 
 OpenClaudeDuet is that Duet — open, local, and model-agnostic.
@@ -38,6 +40,8 @@ OpenClaudeDuet is that Duet — open, local, and model-agnostic.
 4. **Approval & form cards** are the only way anything leaves the machine: send, pay, sign, delete — each waits for your tap, using the same card system as OpenGrokBot's shell approvals.
 5. **Secrets stay local.** Connector credentials are collected through secret form fields into the local vault; neither your chat history nor the model ever sees them.
 
+<img src="./docs/architecture.svg" alt="How OpenClaudeDuet works: apps, watchers, attention inbox, your decision" width="880" />
+
 Design details: [docs/connectors-design.md](docs/connectors-design.md) · Roadmap: [ROADMAP.md](ROADMAP.md)
 
 ## Relationship to OpenGrokBot
@@ -47,6 +51,10 @@ Design details: [docs/connectors-design.md](docs/connectors-design.md) · Roadma
 - Same runtime, same data directory (`~/.opengrokbot/`)
 - Default roster of one ("Duet"), proactive defaults on
 - Same harness switcher — bring whatever model you already pay for, or run one locally
+
+<img src="./docs/kernel-screenshot.png" alt="The OpenGrokBot kernel UI that Duet mode runs on" width="880" />
+
+*The shared kernel UI today (OpenGrokBot). Duet mode ships on this runtime — same chat, cards, memory and workspace, with a single proactive Bot as the default face.*
 
 ## Disclaimer
 

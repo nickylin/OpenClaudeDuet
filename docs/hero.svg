@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="OpenClaudeDuet — a proactive AI agent on your machine">
+  <title>OpenClaudeDuet — the proactive agent, on your machine</title>
+  <defs>
+    <style>
+      .bg { fill: #070708; }
+      .panel { fill: #161617; stroke: rgba(255,255,255,0.08); stroke-width: 1; }
+      .title { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 58px; font-weight: 700; fill: #f5f5f7; }
+      .tag { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 26px; fill: #c7c7cc; }
+      .sub { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 17px; fill: #8e8e93; }
+      .pill { fill: #1d1d1f; stroke: rgba(255,255,255,0.14); stroke-width: 1; }
+      .pilltext { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px; fill: #f5f5f7; }
+      .cardtitle { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 21px; font-weight: 700; fill: #f5f5f7; }
+      .item { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 17px; fill: #c7c7cc; }
+      .btntext { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #111111; }
+      .btntext2 { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; fill: #c7c7cc; }
+    </style>
+  </defs>
+  <rect class="bg" width="1280" height="640"/>
+
+  <circle cx="86" cy="96" r="20" fill="none" stroke="#5EC8B5" stroke-width="3"/>
+  <circle cx="112" cy="96" r="20" fill="none" stroke="#F5A54A" stroke-width="3"/>
+
+  <text class="title" x="64" y="196">OpenClaudeDuet</text>
+  <text class="tag" x="64" y="262">A proactive AI agent that watches your apps,</text>
+  <text class="tag" x="64" y="300">briefs you every morning, and asks before it acts.</text>
+  <text class="sub" x="64" y="356">Open-source Claude Duet alternative — on YOUR machine, with any model.</text>
+
+  <g>
+    <rect class="pill" x="64" y="404" width="138" height="38" rx="19"/>
+    <text class="pilltext" x="88" y="429">No waitlist</text>
+    <rect class="pill" x="218" y="404" width="128" height="38" rx="19"/>
+    <text class="pilltext" x="242" y="429">Any model</text>
+    <rect class="pill" x="362" y="404" width="182" height="38" rx="19"/>
+    <text class="pilltext" x="386" y="429">Secrets stay local</text>
+  </g>
+  <text class="sub" x="64" y="500">US-only and waitlisted is the official one. This one is yours.</text>
+
+  <rect class="panel" x="724" y="84" width="492" height="472" rx="24"/>
+  <text class="cardtitle" x="760" y="136">Morning brief · 8:30</text>
+  <circle cx="772" cy="182" r="6" fill="#5EC8B5"/>
+  <text class="item" x="792" y="189">3 emails need you — drafts prepared</text>
+  <circle cx="772" cy="228" r="6" fill="#F5A54A"/>
+  <text class="item" x="792" y="235">Invoice #1042 unpaid for 12 days</text>
+  <circle cx="772" cy="274" r="6" fill="#8e8e93"/>
+  <text class="item" x="792" y="281">Calendar conflict today at 14:00</text>
+
+  <rect x="760" y="330" width="420" height="176" rx="16" fill="#1d1a14" stroke="rgba(255,159,10,0.35)"/>
+  <text class="cardtitle" x="788" y="374">Send the payment reminder?</text>
+  <text class="item" x="788" y="408">To: client · via Gmail · draft attached</text>
+  <rect x="788" y="436" width="104" height="38" rx="9" fill="#f5f5f7"/>
+  <text class="btntext" x="808" y="461">Approve</text>
+  <rect x="906" y="436" width="76" height="38" rx="9" fill="#26262a"/>
+  <text class="btntext2" x="926" y="461">Skip</text>
+</svg>
