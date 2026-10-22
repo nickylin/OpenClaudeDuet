@@ -1,6 +1,6 @@
 # Roadmap
 
-OpenDuet is built as "Duet mode" on the [OpenGrokBot](https://github.com/nickylin/OpenGrokBot) kernel — one codebase, two product shapes. Items land in whichever repo owns the layer; this file tracks the Duet-specific line.
+OpenClaudeDuet is built as "Duet mode" on the [OpenGrokBot](https://github.com/nickylin/OpenGrokBot) kernel — one codebase, two product shapes. Items land in whichever repo owns the layer; this file tracks the Duet-specific line.
 
 ## P0 — Position (done, 2026-10-22)
 

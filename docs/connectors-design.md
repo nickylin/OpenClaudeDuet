@@ -1,6 +1,6 @@
 # Connector layer design (draft, 2026-10-22)
 
-How OpenDuet watches your apps without becoming a quota bonfire or a credential leak. Written against the OpenGrokBot kernel (scheduler, cards, secrets vault), which Duet mode inherits.
+How OpenClaudeDuet watches your apps without becoming a quota bonfire or a credential leak. Written against the OpenGrokBot kernel (scheduler, cards, secrets vault), which Duet mode inherits.
 
 ## 1. Shape
 
@@ -49,13 +49,13 @@ Rules:
 
 ## 3. Sources, in order
 
-1. **MCP servers (stdio)** — the strategic bet. Claude's connector ecosystem is MCP-shaped; a local MCP client lets OpenDuet reuse community servers (Gmail, Calendar, Slack, GitHub…) instead of hand-writing OAuth flows per service. The poll wrapper calls the server's read tools on the connector's interval.
+1. **MCP servers (stdio)** — the strategic bet. Claude's connector ecosystem is MCP-shaped; a local MCP client lets OpenClaudeDuet reuse community servers (Gmail, Calendar, Slack, GitHub…) instead of hand-writing OAuth flows per service. The poll wrapper calls the server's read tools on the connector's interval.
 2. **Gmail via API + OAuth** — the one hand-written adapter, because email is the highest-value watcher and deserves a first-class checkpoint (historyId) instead of polling a generic MCP list endpoint. OAuth refresh token lives in the vault.
 3. **Local sources** — a watched folder, an RSS feed, a webhook inbox file. Cheap, private, and good dogfood for the pipeline before any account is connected.
 
 ## 4. Triage and the budget guard
 
-The official Duet counts background checks against your plan limits. OpenDuet makes the cost explicit instead:
+The official Duet counts background checks against your plan limits. OpenClaudeDuet makes the cost explicit instead:
 
 - Stage 1, rules (free): sender/domain allow- and block-lists, keyword rules, "only events newer than X", per-connector mute. Most noise dies here.
 - Stage 2, model (metered): only events that pass rules get classified into now / brief / drop, with a one-line reason. Every classification is charged to a **daily background budget** (default: a token cap the user sets); when the budget is exhausted, events queue for the morning brief unclassified instead of failing or silently spending.
